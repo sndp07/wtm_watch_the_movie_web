@@ -7,20 +7,16 @@ import './_style.css'
 
 
 class SearchMovies extends Component {
-
-  state = {
-    changed: false
-  }
+  
   handleOnClick = (event) => {
     const { searchKey, saveSearchKey, getMovies } = this.props
     if (event) {
       event.preventDefault()
       saveSearchKey(event.target.value);
     }
-    
+
     setTimeout(() => {
       getMovies(searchKey)
-      console.log('TimeOut done')
     }, 1000)
 
   }
