@@ -1,0 +1,17 @@
+.search-movies {
+  width: 450px;
+  height: 40px;
+  border: 1px solid #eee;
+  margin-left: auto;
+  display: flex;
+}
+
+.search-movie__imput-text {
+  padding-left: 3px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.search-movies__button {
+  width: 40px;
+}
